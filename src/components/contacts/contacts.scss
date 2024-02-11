@@ -1,0 +1,29 @@
+.contacts {
+    max-height: 20svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        min-height: 200px;
+        gap: 50px;
+        &-item {
+            font-size: 2em;
+            gap: 10px;
+            align-self: center;
+            justify-self: center;
+        }
+        &-link {
+            color: #fff;
+            padding: 10px;
+            &:hover {
+                color: #aaa;
+            }
+        }
+    }
+}
