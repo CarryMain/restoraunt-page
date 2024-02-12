@@ -35,3 +35,66 @@
         }
     }
 }
+
+@media (max-width: 925px) {
+    .menu {
+        height: auto;
+        width: auto;
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .menu {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 250px);
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .menu {
+        font-size: 17px;
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+        }
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 100px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .menu {
+        &__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1em;
+            padding-top: 0;
+        }
+        &__list {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .menu {
+        font-size: 10px;
+        &__title {
+            font-size: 25px;
+            position: relative;
+            bottom: 80px;
+        }
+    }
+}

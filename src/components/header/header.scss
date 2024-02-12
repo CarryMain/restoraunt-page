@@ -38,3 +38,25 @@
         }
     }
 }
+
+@media (max-width: 810px) {
+    .header {
+        width: 100%;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 590px) {
+    .header {
+        padding-top: 15px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding-top: 10px;
+        font-size: 5px;
+    }
+}
